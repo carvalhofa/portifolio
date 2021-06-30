@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <!--Esse monte de ícone (meu ícone personalizado "fac") é que eu tive que copiar do site favicon e colar aqui pra outros dispositivos indentificarem o ícone do site-->
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
@@ -19,26 +18,30 @@
 <body>
 
     <aside class="container">
-        <!-- "aside" é um elemento que representa menu lateral. Poderia ter deixado como uma "div". Mas uma boa prática é priorizar a semântica, ou seja, o significado daquilo que estou fazendo-->
+        
         <div class="hamburger">
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
+        
         <header id="home">
-            <!--esse "wrapper" é como se fosse o "embrulho" onde a imagem vai ficar pra editar-->
+            
             <div class="img-wrapper">
-                <img src="imagens/bg.jpg" alt="">
-                <!--unsplash.com-->
+                <img src="imagens/bg.jpg" alt="">                
             </div>
+            
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Fabio A Carvalho</p>
                 <button>Saiba mais</button>
-            </div>
-        </header>
+            </div><!--banner-->
+
+        </header><!--home-->
+        
         <div class="sidebar">
+            
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -46,24 +49,29 @@
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                     <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
-                </ul>
+                </ul><!--menu-->
             </nav>
+            
             <div class="social-media">
                 <!--retirado do site "fontawesome"-->
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-github-alt"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </aside>
+            </div><!--social-media-->
+            
+        </div><!--sidebar-->
+    </aside><!--container-->
 
     <section class="sessao-conhecimentos" id="conhecimentos">
+        
         <div class="sessao-header">
             <h1>
                 Conhecimentos
             </h1>
-        </div>
+        </div><!--secao-header-->
+        
         <div class="conhecimentos">
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-html5"></i>
@@ -72,8 +80,9 @@
                 <div class="conhecimento-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
+                </div>                
+            </div><!--conhecimento-->
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-css3-alt"></i>
@@ -83,7 +92,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-            </div>
+            </div><!--conhecimento-->
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fas fa-pencil-alt"></i>
@@ -93,7 +103,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-            </div>
+            </div><!--conhecimento-->
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-js"></i>
@@ -103,7 +114,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-            </div>
+            </div><!--conhecimento-->
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-bootstrap"></i>
@@ -113,7 +125,8 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-            </div>
+            </div><!--conhecimento-->
+            
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-github"></i>
@@ -123,19 +136,23 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
-            </div>
+            </div><!--conhecimento-->
+            
             <div class="conhecimentos-img-wrapper">
                 <img src="/imagens/conhecimentos.png" alt="imagem conhecimento">
-            </div>
+            </div><!--conhecimentos-img-wrapper-->
+            
         </div>
-    </section>
+    </section><!--secao-conhecimentos-->
 
     <section class="sessao-projetos" id="projetos">
+        
         <div class="sessao-header">
-            <!--Utilizando a mesma div lá de cima pra não precisar ficar formatando-->
             <h1>Projetos</h1>
         </div>
+        
         <div class="projetos">
+            
             <div class="card">
                 <div class="card-img-wrapper">
                     <img src="/imagens/proj1.jpg" alt="imagem do projeto ToDo">
@@ -147,7 +164,8 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <button class="btn">Saiba Mais</button>
                 </div>
-            </div>
+            </div><!--card-->
+            
             <div class="card">
                 <div class="card-img-wrapper">
                     <img src="/imagens/proj2.jpg" alt="imagem do projeto Maratona">
@@ -159,7 +177,8 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <button class="btn">Saiba Mais</button>
                 </div>
-            </div>
+            </div><!--card-->
+            
             <div class="card">
                 <div class="card-img-wrapper">
                     <img src="/imagens/proj3.jpg" alt="Imagem do Projeto Casa Bela">
@@ -170,40 +189,56 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <button class="btn">Saiba Mais</button>
-                </div>
-            </div>
-        </div>
-    </section>
+                </div><!--card-info-->
+            </div><!--card-->
+            
+        </div><!--projetos-->
+    </section><!--sessao-projetos-->
 
     <section class="sessao-contato" id="contato">
+        
         <div class="contato-wrapper">
-            <div class="contato-left"></div>
-            <!--não tem conteúdo pq vai ser adicionado imagem pelo css-->
+            
+            <div class="contato-left"><!--imagem pelo css--></div>
+   
             <div class="contato-right">
+                
                 <h1>Contato</h1>
+                
                 <form>
+                    
                     <div class="input-group">
                         <input type="text" class="field" id="nome">
                         <label for="nome" class="field-label">Nome</label>
                     </div>
+                    
                     <div class="input-group">
                         <input type="text" class="field" id="email">
                         <label for="email" class="field-label">E-mail</label>
                     </div>
+                    
                     <div class="input-group">
                         <textarea class="field" id="mensagem"></textarea>
                         <label for="mensagem" class="field-label">Mensagem</label>
                     </div>
+                    
                     <button type="submit" class="btn btn-submit">Enviar</button>
+                    
                 </form>
-            </div>
-        </div>
-    </section>
+                
+            </div><!--contato-right-->
+            
+        </div><!--contato-wrapper-->
+    </section><!--sessao-contato-->
 
     <section class="sessao-orcamento" id="orcamento">
+        
         <div class="orcamento-wrapper">
+            
             <h1>Faça um orçamento</h1>
+            
             <form action="">
+                
                 <label for="qtde">Qtde de páginas</label>
                 <input type="number" min="1" name="qtde" id="qtde"/>
                 <label for="js">Preciso de um script JS</label>
@@ -218,16 +253,20 @@
                         <input type="radio" name="layout" id="layout-nao">
                         <label for="layout-nao">Já tenho um layout</label>
                     </div>                    
-                </div>
+                </div><!--group-layout-->
                 <label for="prazo">Prazo</label>
                 <input type="range" name="prazo" id="prazo" min="1" max="10">
                 <label id="preco">R$ 0,00</label>
                 <button class="btn btn-orcamento" type="submit">Enviar</button>
+                
             </form>
-        </div>
-    </section>
+            
+        </div><!--orcamento-wrapper-->
+        
+    </section><!--secao-orcamento-->
 
     <footer>
+        
         <div class="footer-content">
             <p> 
                 Copyright &copy; 2021, ETECIA DS - Todos os direitos reservados
@@ -238,8 +277,10 @@
                     <li><a href=""><i class="fab fa-github-alt"></i></a></li>
                     <li><a href=""><i class="fab fa-twitter"></i></a></li>
                 </ul>
-            </div>
-        </div>
+            </div><!--social-list-->
+            
+        </div><!--footer-content-->
+        
     </footer>
 
     <a href="#home" id="link-topo">
